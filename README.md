@@ -1,5 +1,7 @@
 # Transforming Raw Hospital Data into Actionable Insights  
 
+![dashboard](https://github.com/AbdurRoqeeb/Transforming-Raw-Hospital-Data-into-Actionable-Insights-with-Microsoft-Excel-Power-Query/blob/main/dashboard.png?raw=true)
+
 ## Table of Contents
 - [Overview](#overview)  
 - [Project Goals](#project-goals)  
@@ -17,7 +19,7 @@
   - Step 8: Build Data Model with Relationships  
 - [Conclusion & Next Steps](#conclusion--next-steps)  
 - [Technologies Used](#technologies-used)  
-- [License](#license)
+
 
 ---
 
@@ -58,10 +60,14 @@ This project demonstrates how a raw hospital dataset can be transformed into a s
   - **Doctors**  
   - **Insurance Providers**  
 - Assign unique IDs to each record for use in the fact table :contentReference[oaicite:7]{index=7}.
+![dim table 1](https://github.com/AbdurRoqeeb/Transforming-Raw-Hospital-Data-into-Actionable-Insights-with-Microsoft-Excel-Power-Query/blob/main/assets/Screenshot%202025-08-20%20021247.png?raw=true)
+![dim table 2](https://github.com/AbdurRoqeeb/Transforming-Raw-Hospital-Data-into-Actionable-Insights-with-Microsoft-Excel-Power-Query/blob/main/assets/Screenshot%202025-08-20%20021304.png?raw=true)
+
 
 ### Step 5: Add Derived Columns  
 - In **Patients** table, add an **Age Group** column using a DAX-like function via Power Query.  
 - Enables demographic segmentation analysis :contentReference[oaicite:8]{index=8}.
+![age group dax](https://github.com/AbdurRoqeeb/Transforming-Raw-Hospital-Data-into-Actionable-Insights-with-Microsoft-Excel-Power-Query/blob/main/assets/age_group_dax.png?raw=true)
   
 
 ---
@@ -72,9 +78,11 @@ This project demonstrates how a raw hospital dataset can be transformed into a s
 - Use the main worksheet as the **Fact Table**.  
 - Link to dimension entities using the assigned unique IDs.  
 - Remove redundant columns already stored in dimension tables :contentReference[oaicite:9]{index=9}.
+![fact table](https://github.com/AbdurRoqeeb/Transforming-Raw-Hospital-Data-into-Actionable-Insights-with-Microsoft-Excel-Power-Query/blob/main/assets/Screenshot%202025-08-20%20021417.png?raw=true)
 
 ### Step 7: Create Date Table  
 - Generate a **Date Table** (not detailed in article but implied) to support temporal analytics.
+![date table](https://github.com/AbdurRoqeeb/Transforming-Raw-Hospital-Data-into-Actionable-Insights-with-Microsoft-Excel-Power-Query/blob/main/assets/Screenshot%202025-08-20%20021355.png?raw=true)
 
 ---
 
@@ -88,6 +96,7 @@ This project demonstrates how a raw hospital dataset can be transformed into a s
   - Fact ↔ Insurance Dimension  
   - Fact ↔ Date Table  
 - Ensure referential integrity via unique IDs — forming a star schema :contentReference[oaicite:10]{index=10}.
+![star schema](https://github.com/AbdurRoqeeb/Transforming-Raw-Hospital-Data-into-Actionable-Insights-with-Microsoft-Excel-Power-Query/blob/main/assets/Screenshot%202025-08-20%20020945.png?raw=true)
 
 ---
 
@@ -105,22 +114,3 @@ This project showcases how a messy hospital dataset can be transformed into a cl
 ## Technologies Used
 - **Microsoft Excel**  
 - **Power Query** for data transformation • ETL • star schema modeling :contentReference[oaicite:13]{index=13}
-
----
-
-## License
-*Add your preferred license details here (MIT, CC-BY, etc.).*
-
----
-
-### Customization Tips
-- **Badges**: Use Shields.io to add build status, license, or data refresh badges  
-- **Screenshots**: Embed visuals like the data model or sample cleaning steps  
-- **Installation & Usage**: If you’re packaging this as a workbook template or shared tool  
-- **Contributing**: Outline how others can suggest enhancements  
-- **Contact**: Add any contact or portfolio links if you want to share
-
----
-
-Let me know if you'd like help incorporating images, adding code snippets (e.g., Power Query M formulas), or tailoring it to include screenshots!
-::contentReference[oaicite:14]{index=14}
